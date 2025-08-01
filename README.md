@@ -23,11 +23,7 @@ An intuitive and visually engaging Flutter application to split bills among frie
 
 ---
 
-## 🧱 Project Structure
 
-<img width="700" height="220" alt="Project Structure" src="https://github.com/user-attachments/assets/70bc5e8a-7567-46f1-94f4-16fb2675e5c7" />
-
----
 
 ## 📜 License
 
