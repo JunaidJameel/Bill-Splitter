@@ -1,6 +1,7 @@
 # 💸 Bill Splitter
 
-An intuitive and visually engaging Flutter application to split bills among friends or group members. This app combines beautiful UI with interactive sliders and avatars, allowing you to distribute a bill easily and fairly.
+An intuitive and visually engaging Flutter application to split bills among friends or group members. This app combines beautiful UI with interactive sliders, animations, Custom painter and avatars, allowing you to distribute a bill easily and fairly.
+Clone it and make it grow with backend.
 
 ---
 
@@ -8,7 +9,6 @@ An intuitive and visually engaging Flutter application to split bills among frie
 
 💡 Elegant slider UI with profile avatars and dynamic amount updates  
 🧮 Realtime amount calculation based on slider value  
-🟣 Custom themed sliders with dot indicators for steps  
 📱 Fully responsive layout using Flutter best practices  
 🎨 Clean and modern design with smooth animations
 
