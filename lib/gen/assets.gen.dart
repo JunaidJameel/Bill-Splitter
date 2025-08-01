@@ -26,8 +26,17 @@ class $AssetsImagesGen {
   /// File path: assets/images/p4.png
   AssetGenImage get p4 => const AssetGenImage('assets/images/p4.png');
 
+  /// File path: assets/images/p5.png
+  AssetGenImage get p5 => const AssetGenImage('assets/images/p5.png');
+
+  /// File path: assets/images/p6.png
+  AssetGenImage get p6 => const AssetGenImage('assets/images/p6.png');
+
+  /// File path: assets/images/p7.png
+  AssetGenImage get p7 => const AssetGenImage('assets/images/p7.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [p1, p2, p3, p4];
+  List<AssetGenImage> get values => [p1, p2, p3, p4, p5, p6, p7];
 }
 
 class $AssetsLottieGen {

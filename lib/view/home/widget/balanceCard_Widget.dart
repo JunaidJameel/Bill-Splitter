@@ -4,7 +4,6 @@ import 'package:bill_splitter/app_widgets/buttons/primary_button.dart';
 import 'package:bill_splitter/const/app_colors.dart';
 import 'package:bill_splitter/const/app_typography.dart';
 import 'package:bill_splitter/const/app_utils.dart';
-import 'package:bill_splitter/const/extensions/extension_padding.dart';
 import 'package:bill_splitter/const/extensions/extension_sizebox.dart';
 import 'package:bill_splitter/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
@@ -112,7 +111,14 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
                 ),
                 child: Row(
                   children: [
-                    CircleAvatar(),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(100)),
+                      child: CircleAvatar(
+                        radius: 20.sp,
+                        backgroundColor: AppColors.kScaffoldColor,
+                      ),
+                    ),
                     13.hSpace,
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -134,7 +140,7 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
               ),
             ],
           ),
-          _buildMemberTile()
+          _buildMemberTile(),
         ],
       ),
     );
