@@ -1,3 +1,3 @@
 # Bill Splitter
-<img width="220" height="700" alt="simulator_screenshot_E4F5084C-EDF0-4900-91C9-31EC6718FFA4" src="https://github.com/user-attachments/assets/37f11db0-c066-4d4f-9c3f-4972d81373a7" />
 
+<img width="220" height="700" alt="Screenshot 2025-08-01 at 9 31 11 PM" src="https://github.com/user-attachments/assets/a1ececa9-c478-44ab-a486-dbb6c2bf552b" />
