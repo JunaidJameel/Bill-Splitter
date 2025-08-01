@@ -54,8 +54,9 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
                             10.vSpace,
                             Text(
                               'Total Bill',
-                              style: AppTypography.kSemiBold16
-                                  .copyWith(color: AppColors.kBlack),
+                              style: AppTypography.kSemiBold16.copyWith(
+                                color: AppColors.kBlack,
+                              ),
                             ),
                             Text(
                               '\$750.86',
@@ -83,8 +84,9 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
                             16.vSpace,
                             Text(
                               'Split with',
-                              style: AppTypography.kSemiBold14
-                                  .copyWith(color: AppColors.kBlack),
+                              style: AppTypography.kSemiBold14.copyWith(
+                                color: AppColors.kBlack,
+                              ),
                             ),
                             !isOpend
                                 ? BouncingArrows(
@@ -131,13 +133,15 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
                       children: [
                         Text(
                           'Your previous split',
-                          style: AppTypography.kRegular14
-                              .copyWith(color: AppColors.kWhite),
+                          style: AppTypography.kRegular14.copyWith(
+                            color: AppColors.kWhite,
+                          ),
                         ),
                         Text(
                           '\$59.00',
-                          style: AppTypography.kRegular14
-                              .copyWith(color: Colors.grey),
+                          style: AppTypography.kRegular14.copyWith(
+                            color: Colors.grey,
+                          ),
                         ),
                       ],
                     )

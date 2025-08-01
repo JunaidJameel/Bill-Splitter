@@ -26,8 +26,10 @@ class Header extends StatelessWidget {
               CustomRichText(
                 info: 'Raheel',
                 title: '\nSplit your Bills',
-                firstTextStyle: AppTypography.kSemiBold14
-                    .copyWith(color: AppColors.kWhite, fontSize: 16.sp),
+                firstTextStyle: AppTypography.kSemiBold14.copyWith(
+                  color: AppColors.kWhite,
+                  fontSize: 16.sp,
+                ),
                 secondTextStyle: AppTypography.kSemiBold14
                     .copyWith(color: AppColors.kPrimary, fontSize: 16.sp),
               )
@@ -49,18 +51,17 @@ class Header extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(4),
-                      child: Text('User',
-                          style: AppTypography.kRegular10
-                              .copyWith(color: AppColors.kWhite)),
+                      child: Text('User', style: AppTypography.kRegular10),
                     )
                   ],
                 ),
               ),
               Positioned(
-                  top: -05,
-                  left: 0,
-                  right: 0,
-                  child: Lottie.asset(Assets.lottie.humans)),
+                top: -05,
+                left: 0,
+                right: 0,
+                child: Lottie.asset(Assets.lottie.humans),
+              ),
             ],
           ),
         ],
