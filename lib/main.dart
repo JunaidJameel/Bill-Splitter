@@ -5,16 +5,16 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-// void main() {
-//   runApp(const MyApp());
-// }
+void main() {
+  runApp(const MyApp());
+}
 
-void main() => runApp(
-      DevicePreview(
-        enabled: !kReleaseMode,
-        builder: (context) => MyApp(), // Wrap your app
-      ),
-    );
+// void main() => runApp(
+//       DevicePreview(
+//         enabled: !kReleaseMode,
+//         builder: (context) => MyApp(), // Wrap your app
+//       ),
+//     );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

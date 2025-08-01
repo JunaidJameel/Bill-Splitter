@@ -12,6 +12,7 @@ class PrimaryButton extends StatelessWidget {
   final double? width;
   final TextStyle? style;
   final Color? btnColor;
+  final double? radius;
 
   const PrimaryButton(
       {super.key,
@@ -20,7 +21,8 @@ class PrimaryButton extends StatelessWidget {
       this.height,
       this.width,
       this.style,
-      this.btnColor});
+      this.btnColor,
+      this.radius});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class PrimaryButton extends StatelessWidget {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: btnColor ?? AppColors.kBlack,
-          borderRadius: BorderRadius.circular(12.r),
+          borderRadius: BorderRadius.circular(radius ?? 12.r),
         ),
         child: Text(
           text,

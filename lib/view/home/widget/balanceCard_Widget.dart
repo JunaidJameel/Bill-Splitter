@@ -4,8 +4,10 @@ import 'package:bill_splitter/app_widgets/buttons/primary_button.dart';
 import 'package:bill_splitter/const/app_colors.dart';
 import 'package:bill_splitter/const/app_typography.dart';
 import 'package:bill_splitter/const/app_utils.dart';
+import 'package:bill_splitter/const/extensions/extension_padding.dart';
 import 'package:bill_splitter/const/extensions/extension_sizebox.dart';
 import 'package:bill_splitter/gen/assets.gen.dart';
+import 'package:bill_splitter/view/split/split.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -51,7 +53,7 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
                           children: [
                             10.vSpace,
                             Text(
-                              'Total Bal',
+                              'Total Bill',
                               style: AppTypography.kSemiBold16
                                   .copyWith(color: AppColors.kBlack),
                             ),
@@ -66,7 +68,10 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
                               height: 45.h,
                               btnColor: AppColors.kScaffoldColor,
                               text: 'Split Now',
-                              onTap: () {},
+                              onTap: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (_) => SplitView())),
                               width: MediaQuery.sizeOf(context).width * .24,
                               style: AppTypography.kSemiBold14.copyWith(
                                   color: AppColors.kPrimary, fontSize: 12.sp),
@@ -117,6 +122,7 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
                       child: CircleAvatar(
                         radius: 20.sp,
                         backgroundColor: AppColors.kScaffoldColor,
+                        child: Image.asset(Assets.icons.money.path).py(6),
                       ),
                     ),
                     13.hSpace,

@@ -23,13 +23,13 @@ class CustomRichText extends StatelessWidget {
             text: '$info ',
             style: firstTextStyle ??
                 AppTypography.kMedium14
-                    .copyWith(color: AppColors.kPrimary, fontSize: 16.sp),
+                    .copyWith(color: AppColors.kScaffoldColor, fontSize: 14.sp),
             children: [
           TextSpan(
             text: ' $title',
             style: secondTextStyle ??
-                AppTypography.kMedium14
-                    .copyWith(color: AppColors.kPrimary, fontSize: 16.sp),
+                AppTypography.kSemiBold14
+                    .copyWith(color: AppColors.kScaffoldColor, fontSize: 19.sp),
           )
         ]));
   }

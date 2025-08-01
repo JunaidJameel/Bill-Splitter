@@ -127,7 +127,7 @@ class RecentSplitWidget extends StatelessWidget {
         'name': 'Slang',
         'img': Assets.images.p1.path,
         'color': Colors.red[100],
-      }
+      },
     ];
 
     return Column(
