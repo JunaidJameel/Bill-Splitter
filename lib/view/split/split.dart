@@ -18,6 +18,7 @@ class SplitView extends StatelessWidget {
       body: Column(
         children: [
           ReceiptWidget(),
+          30.vSpace,
           SliderWidget(),
           ConfirmButton(),
         ],

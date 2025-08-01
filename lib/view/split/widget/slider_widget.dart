@@ -1,4 +1,8 @@
 import 'package:bill_splitter/const/app_colors.dart';
+import 'package:bill_splitter/const/app_typography.dart';
+import 'package:bill_splitter/const/app_utils.dart';
+import 'package:bill_splitter/const/extensions/extension_sizebox.dart';
+import 'package:bill_splitter/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 class SliderWidget extends StatefulWidget {
@@ -12,34 +16,34 @@ class _SliderWidgetState extends State<SliderWidget> {
   final List<Map<String, dynamic>> _users = [
     {
       'name': 'Me',
-      'color': Colors.lightBlueAccent,
-      'avatar': 'assets/images/p1.png',
+      'color': Colors.lightBlueAccent[100],
+      'avatar': Assets.images.p1.path,
       'amount': 200.86,
       'value': 4.0,
     },
     {
       'name': 'Cody',
-      'color': Colors.purpleAccent,
-      'avatar': 'assets/images/p2.png',
+      'color': Colors.purple[200],
+      'avatar': Assets.images.p2.path,
       'amount': 450.0,
       'value': 6.0,
     },
     {
       'name': 'Khalifa',
-      'color': Colors.deepOrangeAccent,
-      'avatar': 'assets/images/p3.png',
+      'color': Colors.deepOrangeAccent[100],
+      'avatar': Assets.images.p3.path,
       'amount': 100.0,
       'value': 2.0,
     },
   ];
 
-  final double _maxValue = 10.0;
+  final double _maxValue = 8.0;
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: kPagePadding,
         child: ListView.builder(
           itemCount: _users.length,
           itemBuilder: (context, index) {
@@ -58,26 +62,27 @@ class _SliderWidgetState extends State<SliderWidget> {
         children: [
           Row(
             children: [
-              CircleAvatar(
-                backgroundColor: user['color'],
-                backgroundImage: AssetImage(user['avatar']),
+              Container(
+                height: 40,
+                width: 40,
+                decoration: BoxDecoration(
+                  border: Border.all(color: AppColors.kWhite),
+                  shape: BoxShape.circle,
+                  color: user['color'],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: Image.asset(user['avatar']),
+                ),
               ),
               const SizedBox(width: 10),
-              Text(
-                user['name'],
-                style: const TextStyle(color: Colors.white, fontSize: 16),
-              ),
+              Text(user['name'], style: AppTypography.kSemiBold16),
               const Spacer(),
-              Text(
-                '\$${user['amount'].toStringAsFixed(2)}',
-                style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16),
-              ),
+              Text('\$${user['amount'].toStringAsFixed(2)}',
+                  style: AppTypography.kSemiBold16),
             ],
           ),
-          const SizedBox(height: 10),
+          15.vSpace,
           Stack(
             children: [
               Container(
@@ -95,8 +100,8 @@ class _SliderWidgetState extends State<SliderWidget> {
                           child: Align(
                             alignment: Alignment.center,
                             child: Container(
-                              width: 6,
-                              height: 6,
+                              width: 7,
+                              height: 7,
                               decoration: const BoxDecoration(
                                 color: Colors.white,
                                 shape: BoxShape.circle,
@@ -111,7 +116,7 @@ class _SliderWidgetState extends State<SliderWidget> {
               ),
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackHeight: 30,
+                  trackHeight: 8,
                   inactiveTrackColor: Colors.transparent,
                   activeTrackColor: user['color'],
                   thumbColor: Colors.orangeAccent[100],

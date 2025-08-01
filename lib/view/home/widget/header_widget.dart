@@ -28,6 +28,8 @@ class Header extends StatelessWidget {
                 title: '\nSplit your Bills',
                 firstTextStyle: AppTypography.kSemiBold14
                     .copyWith(color: AppColors.kWhite, fontSize: 16.sp),
+                secondTextStyle: AppTypography.kSemiBold14
+                    .copyWith(color: AppColors.kPrimary, fontSize: 16.sp),
               )
             ],
           ),

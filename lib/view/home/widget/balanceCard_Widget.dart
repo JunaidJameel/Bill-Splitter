@@ -33,7 +33,7 @@ class _BalanceCardWidgetState extends State<BalanceCardWidget> {
         children: [
           Column(
             children: [
-              30.vSpace,
+              20.vSpace,
               Container(
                 padding: kPagePadding,
                 width: double.infinity,
