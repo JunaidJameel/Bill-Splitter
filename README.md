@@ -18,7 +18,7 @@ Clone it and make it grow with backend.
 
 | App Preview |
 |-------------|
-<img width="225" height="680" alt="Screenshot 2025-08-01 at 9 43 28 PM" src="https://github.com/user-attachments/assets/acd70a47-0cdf-4396-9441-632d5842c693" />
+<img width="222" height="680" alt="Screenshot 2025-08-01 at 9 43 28 PM" src="https://github.com/user-attachments/assets/acd70a47-0cdf-4396-9441-632d5842c693" />
 
 <img width="220" height="680" alt="Screenshot 2" src="https://github.com/user-attachments/assets/d541ae84-ea27-4f4c-9506-d037cd163ba4" />
 
